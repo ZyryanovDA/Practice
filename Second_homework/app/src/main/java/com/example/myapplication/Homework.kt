@@ -2,7 +2,7 @@ package com.example.myapplication
 import kotlin.math.*
 
 fun main() {
-    var Resolve = solveEquation(3 , 4, 2)
+    var Resolve = solveEquation(3, 4, 2)
     print(Resolve)
 }
 
