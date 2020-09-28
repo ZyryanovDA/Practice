@@ -5,12 +5,15 @@ fun main() {
     var KeyboardNumber: Int = readLine()?.toIntOrNull() ?: return
     println(KeyboardNumber)
     println("Введите число и нажмите кнопку Enter, повторите 5 раз:")
-    //переделай под функцию Cicles
-}
-fun Cicles(): Int {
+    var ArrayOfPositives: Array<Int> = Array(5, {0})
     val KeyRange = 1..5
-    for (i in KeyRange){
-        var i: Int = readLine()?.toIntOrNull() ?: return
-        if (i !is Int) continue
+    var counter = 0
+    for (i in KeyRange) {
+        var i: Int = readLine()?.toIntOrNull() ?: continue
+        if (i > 0) {
+            ArrayOfPositives[counter] = i
+        }
+        counter++
     }
+    print(ArrayOfPositives)
 }
